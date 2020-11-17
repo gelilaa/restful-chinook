@@ -20,7 +20,7 @@ const controllers = {
     };
     console.log(userInput);
    
-    const sql =`SELECT name FROM Artist WHERE ArtistID is ${userInput.id}`;
+    const sql =`SELECT name FROM Artist WHERE ArtistID is ?`;
 
 db.get(sql,userInput.id,(err,row)=>{
   if(err){
