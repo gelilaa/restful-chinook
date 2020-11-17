@@ -1,43 +1,46 @@
-# JavaScript Quiz
+# Development Strategy
 
-...
+> `RESTFUL-CHINOOK`
 
----
 
-## User Story Dependencies
-
-[Story Dependency Diagram](https://excalidraw.com/)
-
----
 
 ## WIREFRAME
 
-![wireframe]()
 
 ---
 
-## 0.Setup
+## 0. Set-Up
 
----
+_A User can see the initial repository and live demo_
 
-## 1. Initialize Application
+### Repository
 
-__As a user I want to see the initial page when I load the site__
+- Created a new repository
+- Clone the repository
+- Write initial, basic README
+- Start the development strategy
+- Prepare a project board
+- Push the changes to GitHub
+- Turn on GitHub Pages
 
-- _Given [context] when [a specific action is performed] then [a set of consequences should occur]__
-- ...
+##  
 
-### REPO
+### Node.js
 
-- This user story is developed on branch `_`.
-- This branch is merged to `master` branch after completion.
+-
 
-### Task A
+### Javascript
 
-### Task B
+- Add required event listeners
 
-### Task ...
+### HTML
 
----
+- 
 
-## ...
+### CSS
+
+- Add some styling
+
+### DATABASE
+
+- 
