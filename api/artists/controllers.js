@@ -15,19 +15,22 @@ const controllers = {
     });
   },
   getOne: (req, res) => { 
+
     const userInput ={
       id:req.params.id
     };
-    console.log(userInput);
+    
    
-    const sql =`SELECT name FROM Artist WHERE ArtistID is ?`;
+    const sql =`SELECT name FROM Artists WHERE ArtistID is ?`;
 
 db.get(sql,userInput.id,(err,row)=>{
   if(err){
     res.status(400).json({ "error": err.message });
         return;
   }
+ 
   res.json(row);
+  
 
 })
   },
