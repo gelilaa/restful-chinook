@@ -14,7 +14,26 @@ const controllers = {
       res.json(rows)
     });
   },
-  getOne: (req, res) => { },
+  getOne: (req, res) => { 
+
+    const userInput ={
+      id:req.params.id
+    };
+    
+   
+    const sql =`SELECT name FROM Artists WHERE ArtistID is ?`;
+
+db.get(sql,userInput.id,(err,row)=>{
+  if(err){
+    res.status(400).json({ "error": err.message });
+        return;
+  }
+ 
+  res.json(row);
+  
+
+})
+  },
   create: (req, res) => {
     // read row data from body
   },
